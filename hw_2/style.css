@@ -1,0 +1,91 @@
+table{
+  width: 80%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table, th, td{
+  border: 1px solid #000000;
+}
+
+.seventhRow{
+  text-align: left;
+}
+
+td{
+  padding: 15px 20px;
+}
+
+.cells{
+  padding: 0 30px;
+}
+
+.firstRow, .cells{
+  font-size: 28px;
+}
+
+.secondRow{
+  font-size: 14px;
+}
+
+.thirdRow, .fourthRow, .fifthRow, .sixthRow, .seventhRow{
+  font-size: 18px;
+}
+
+/* styles for forms */
+ul{
+  list-style-type: none;
+}
+
+form{
+  width: 500px;
+  line-height: 35px;
+}
+
+.skills{
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  margin: -30px 0 0 120px;
+}
+
+.country{
+  flex-direction: column;
+  width: 100px;
+  margin: -35px 0 0 120px;
+}
+
+.dev{
+  flex-direction: column;
+  width: 160px;
+  margin-left: 120px;
+}
+
+#experience{
+  width: 35px;
+}
+
+#desire{
+  width: 250px;
+}
+
+#dob, #url, #email, #phone, #password, #lastName, #firstName, #id, #about{
+  float: right;
+  margin-right: 20px;
+  width: 250px;
+  margin-top: 5px;
+}
+
+#pic{
+  float: right;
+  margin-right: 20px;
+  margin-top: -25px;
+}
+
+#about{
+  height: 50px;
+}
+
+.pic{
+  margin-top: 25px;
+}

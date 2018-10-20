@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Form</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <h1>Profile edit page</h1>
-    <form action="form.php" method="post">
+    <form action="form.php" method="post">>
         <fieldset>
             <legend>Basic info</legend>
             <ul>
-                <li>
+                <li class="forms">
                     <label for="id">ID</label>
                     <input type="text" id="id" required>
                 </li>
-                <li>
+                <li class="forms">
                     <label for="firstName">First Name</label>
                     <input type="text" id="firstName" required>
                 </li>
@@ -51,9 +52,9 @@
                     <label for="about">About me</label>
                     <textarea id="about"></textarea>
                 </li>
-                <li>
+                <li class="pic">
                     Profile picture
-                    <input type="file">
+                    <input type="file" id="pic">
                 </li>
             </ul>
         </fieldset>
@@ -62,7 +63,7 @@
             <ul>
                 <li>
                     <label>Desire to study
-                        <input type="range">
+                        <input type="range" id="desire">
                     </label>
                 </li>
                 <li>
@@ -70,23 +71,23 @@
                         <input type="number" id="experience"> years
                     </label>
                 </li>
-                <li>
-                    Development experience
+                Development experience
+                <li class="dev">
                     <label for="learning">
                         <input type="radio" id="learning" name="development">Learning to Program
-                    </label>
+                    </label><br>
                     <label for="junior">
                         <input type="radio" id="junior" name="development" checked>Junior Developer
-                    </label>
+                    </label><br>
                     <label for="mid">
                         <input type="radio" id="mid" name="development">Mid-Level Developer
-                    </label>
+                    </label><br>
                     <label for="senior">
                         <input type="radio" id="senior" name="development">Senior Developer
                     </label>
                 </li>
-                <li>
-                    Country
+                Country
+                <li class="country">
                     <select title="Your country">
                         <option>- Choose your country -</option>
                         <option value="UA">Ukraine</option>
@@ -95,8 +96,8 @@
                         <option value="ESP">Spain</option>
                     </select>
                 </li>
-                <li>
-                    Skills
+                Skills
+                <li class="skills">
                     <label for="html">
                         <input type="checkbox" id="html" name="skills" value="html" checked>HTML
                     </label>
