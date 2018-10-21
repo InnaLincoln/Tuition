@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Profile edit page</h1>
-    <form action="form.php" method="post">
+    <form action="https://postman-echo.com/post" method="post">
         <fieldset>
             <legend>Basic info</legend>
             <ul>
@@ -21,7 +21,7 @@
                 </li>
                 <li>
                     <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" name="secondName">
+                    <input type="text" id="lastName" name="lastName">
                 </li>
                 <li>
                     <label for="password">Password</label>
@@ -74,16 +74,16 @@
                 Development experience
                 <li class="dev">
                     <label for="learning">
-                        <input type="radio" id="learning" name="development">Learning to Program
+                        <input type="radio" id="learning" name="development" value="learning">Learning to Program
                     </label><br>
                     <label for="junior">
-                        <input type="radio" id="junior" name="development" checked>Junior Developer
+                        <input type="radio" id="junior" name="development" value="junior" checked>Junior Developer
                     </label><br>
                     <label for="mid">
-                        <input type="radio" id="mid" name="development">Mid-Level Developer
+                        <input type="radio" id="mid" name="development" value="mid-level">Mid-Level Developer
                     </label><br>
                     <label for="senior">
-                        <input type="radio" id="senior" name="development">Senior Developer
+                        <input type="radio" id="senior" name="development" value="senior">Senior Developer
                     </label>
                 </li>
                 Country
