@@ -13,48 +13,48 @@
             <ul>
                 <li class="forms">
                     <label for="id">ID</label>
-                    <input type="text" id="id" required>
+                    <input type="text" id="id" name="id" required>
                 </li>
                 <li class="forms">
                     <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" required>
+                    <input type="text" id="firstName" name="firstName" required>
                 </li>
                 <li>
                     <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName">
+                    <input type="text" id="lastName" name="secondName">
                 </li>
                 <li>
                     <label for="password">Password</label>
-                    <input type="password" id="password" required>
+                    <input type="password" id="password" name="password" required>
                 </li>
                 <li>
                     <label for="phone">Phone</label>
-                    <input type="tel" id="phone" placeholder="+380">
+                    <input type="tel" id="phone"  name="phone" placeholder="+380">
                 </li>
                 <li>
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="easypeasy@lemon.com" required>
+                    <input type="email" id="email" name="email" placeholder="easypeasy@lemon.com" required>
                 </li>
                 <li>
-                    <input type="checkbox" id="keep">
+                    <input type="checkbox" name="keepPrivate" id="keep">
                     <label for="keep">Keep my email address private</label><br>
                     We'll remove your public profile email and use 1978331+username@users.noreplylocalhost
                 </li>
                 <li>
                     <label for="dob">DOB</label>
-                    <input type="date" id="dob">
+                    <input type="date" id="dob" name="dob">
                 </li>
                 <li>
                     <label for="url">Blog url</label>
-                    <input type="url" id="url" placeholder="http://">
+                    <input type="url" id="url" name="url" placeholder="http://">
                 </li>
                 <li>
                     <label for="about">About me</label>
-                    <textarea id="about"></textarea>
+                    <textarea id="about" name="about"></textarea>
                 </li>
                 <li class="pic">
                     Profile picture
-                    <input type="file" id="pic">
+                    <input type="file" id="pic" name="pic">
                 </li>
             </ul>
         </fieldset>
@@ -63,12 +63,12 @@
             <ul>
                 <li>
                     <label>Desire to study
-                        <input type="range" id="desire">
+                        <input type="range" id="desire" name="desire">
                     </label>
                 </li>
                 <li>
                     <label for="experience">Experience
-                        <input type="number" id="experience"> years
+                        <input type="number" id="experience" name="experience"> years
                     </label>
                 </li>
                 Development experience
@@ -98,24 +98,38 @@
                 </li>
                 Skills
                 <li class="skills">
-                    <label for="html">
-                        <input type="checkbox" id="html" name="skills" value="html" checked>HTML
-                    </label>
-                    <label for="css">
-                        <input type="checkbox" id="css" name="skills" value="css">CSS
-                    </label>
-                    <label for="js">
-                        <input type="checkbox" id="js" name="skills" value="js">JavaScript
-                    </label>
-                    <label for="ruby">
-                        <input type="checkbox" id="ruby" name="skills" value="ruby">Ruby
-                    </label>
-                    <label for="scala">
-                        <input type="checkbox" id="scala" name="skills" value="scala">Scala
-                    </label>
-                    <label for="haskell">
-                        <input type="checkbox" id="haskell" name="skills" value="haskell">Haskell
-                    </label>
+                    <ul>
+                        <li>
+                            <label for="html">
+                                <input type="checkbox" id="html" name="skills" value="html" checked>HTML
+                            </label>
+                        </li>
+                        <li>
+                            <label for="css">
+                                <input type="checkbox" id="css" name="skills" value="css">CSS
+                            </label>
+                        </li>
+                        <li>
+                            <label for="js">
+                                <input type="checkbox" id="js" name="skills" value="js">JavaScript
+                            </label>
+                        </li>
+                        <li>
+                            <label for="ruby">
+                                <input type="checkbox" id="ruby" name="skills" value="ruby">Ruby
+                            </label>
+                        </li>
+                        <li>
+                            <label for="scala">
+                                <input type="checkbox" id="scala" name="skills" value="scala">Scala
+                            </label>
+                        </li>
+                        <li>
+                            <label for="haskell">
+                                <input type="checkbox" id="haskell" name="skills" value="haskell">Haskell
+                            </label>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </fieldset>
