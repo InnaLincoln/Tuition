@@ -42,20 +42,18 @@ form{
   line-height: 35px;
 }
 
-.skills{
-  margin: -30px 0 0 80px;
+#yourCountry{
+  flex-direction: column;
+  width: 165px;
+  margin-left: 85px;
 }
 
-.country{
-  flex-direction: column;
-  width: 100px;
-  margin: -35px 0 0 120px;
+.skills ul{
+  margin: -30px 0 0 100px;
 }
 
-.dev{
-  flex-direction: column;
-  width: 160px;
-  margin-left: 120px;
+.dev ul{
+  margin-left: 100px;
 }
 
 #experience{
