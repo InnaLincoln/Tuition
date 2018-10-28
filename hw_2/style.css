@@ -8,7 +8,7 @@ table, th, td{
   border: 1px solid #000000;
 }
 
-.seventhRow{
+.seventh-row{
   text-align: left;
 }
 
@@ -20,15 +20,15 @@ td{
   padding: 0 30px;
 }
 
-.firstRow, .cells{
+.first-row, .cells{
   font-size: 28px;
 }
 
-.secondRow{
+.second-row{
   font-size: 14px;
 }
 
-.thirdRow, .fourthRow, .fifthRow, .sixthRow, .seventhRow{
+.third-row, .fourth-row, .fifth-row, .sixth-row, .seventh-row{
   font-size: 18px;
 }
 
@@ -42,7 +42,7 @@ form{
   line-height: 35px;
 }
 
-#yourCountry{
+#your-country{
   flex-direction: column;
   width: 165px;
   margin-left: 85px;
@@ -64,7 +64,7 @@ form{
   width: 250px;
 }
 
-#dob, #url, #email, #phone, #password, #lastName, #firstName, #id, #about{
+#dob, #url, #email, #phone, #password, #last-name, #first-name, #id, #about{
   float: right;
   margin-right: 20px;
   width: 250px;
@@ -84,3 +84,4 @@ form{
 .pic{
   margin-top: 25px;
 }
+
