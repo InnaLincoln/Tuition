@@ -1,0 +1,87 @@
+table{
+  width: 80%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table, th, td{
+  border: 1px solid #000000;
+}
+
+.seventh-row{
+  text-align: left;
+}
+
+td{
+  padding: 15px 20px;
+}
+
+.cells{
+  padding: 0 30px;
+}
+
+.first-row, .cells{
+  font-size: 28px;
+}
+
+.second-row{
+  font-size: 14px;
+}
+
+.third-row, .fourth-row, .fifth-row, .sixth-row, .seventh-row{
+  font-size: 18px;
+}
+
+/* styles for forms */
+ul{
+  list-style-type: none;
+}
+
+form{
+  width: 500px;
+  line-height: 35px;
+}
+
+#your-country{
+  flex-direction: column;
+  width: 165px;
+  margin-left: 85px;
+}
+
+.skills ul{
+  margin: -30px 0 0 100px;
+}
+
+.dev ul{
+  margin-left: 100px;
+}
+
+#experience{
+  width: 35px;
+}
+
+#desire{
+  width: 250px;
+}
+
+#dob, #url, #email, #phone, #password, #last-name, #first-name, #id, #about{
+  float: right;
+  margin-right: 20px;
+  width: 250px;
+  margin-top: 5px;
+}
+
+#pic{
+  float: right;
+  margin-right: 20px;
+  margin-top: -25px;
+}
+
+#about{
+  height: 50px;
+}
+
+.pic{
+  margin-top: 25px;
+}
+
