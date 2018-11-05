@@ -1,5 +1,5 @@
 *{
-  font-family: 'Roboto', sans-serif;;
+  font-family: 'Roboto', sans-serif;
 }
 
 .nav {
@@ -19,12 +19,12 @@
   color: #fff;
 }
 
-.nav__item a:active{
-  border-top: 2px solid #fff;
+.nav__item:active{
+  border-top: 5px solid #fff;
   height: 76px;
 }
 
-.nav__item a:hover{
+.nav__item:hover{
   display: block;
   background-color: #fff;
   color: #2a2a2a;
@@ -61,11 +61,105 @@ select{
   display: none;
 }
 
-.background_image{
-  background: url("img/back.png") no-repeat center;
-  height: 739px;
-  width: 100%;
+.slider{
   position: relative;
+  top: -120px;
+  width: 100%;
+  color: #fff;
+}
+
+.slider-row{
+  justify-content: center;
+  align-items: baseline;
+  margin-left: -50px;
+}
+
+.inside-block{
+  flex-direction: column;
+  align-items: center;
+  margin-top: -95px;
+  font-weight: lighter;
+}
+
+.day, .month{
+  font-weight: 100;
+  font-size: 16px;
+  color: #7d7c7c;
+  line-height: 25px;
+}
+
+.number-of-day{
+  font-size: 44px;
+  border-bottom: 1px solid #7d7c7c;
+  margin-top: -15px;
+  margin-bottom: -8px;
+}
+
+.white{
+  border-bottom: 1px solid #fff;
+}
+
+.inside-block-long{
+  margin-top: -95px;
+  flex-direction: column;
+  font-weight: lighter;
+  margin-left: 15px;
+}
+
+.text{
+  font-size: 13px;
+}
+
+.button-img{
+  margin-top: -93px;
+  align-self: flex-end;
+  margin-right: 15px;
+}
+
+.button{
+  color: #fff;
+  background: #464A4C;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  width: 120px;
+  height: 25px;
+  position: relative;
+  top: -20px;
+  left: 270px;
+  border: 0;
+}
+
+.title{
+  font-size: 28px;
+}
+
+.main{
+  margin-top: -100px;
+}
+
+.left-arrow, .right-arrow{
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(to top, #4c4c4c, #505050);
+  padding-top: 4px;
+  border-radius: 3px;
+}
+
+.left-arrow{
+  padding-left: 11px;
+  margin-right: 4px;
+}
+
+.right-arrow{
+  padding-left: 15px;
+  margin-left: 4px;
+}
+
+.left-arrow:hover, .right-arrow:hover{
+  border-radius: 3px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(to top, #dd492a, #e54b2b);
 }
 
 .nav-icon{
