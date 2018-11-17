@@ -1,0 +1,87 @@
+.for-line {
+  &::before {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: $back-color;
+    margin-bottom: 15px;
+  }
+  .people-say {
+    margin-top: 95px;
+    text-align: center;
+    margin-bottom: 200px;
+
+    .dot {
+      color: $dot-color;
+    }
+    h2 {
+      font-size: 60px;
+      font-weight: 900;
+      margin-bottom: 39px;
+    }
+    .people-say-title {
+      padding-bottom: 45px;
+    }
+    .card-body {
+      text-align: left;
+      font-size: 18px;
+      font-style: italic;
+      line-height: 1.78;
+      color: $primary-gray;
+
+      .card-link {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.56;
+        letter-spacing: 1.1px;
+        color: $dot-color;
+        font-style: normal;
+      }
+    }
+    .central-card {
+      box-shadow: 0 30px 60px 0 rgba(54, 54, 54, 0.15);
+      background-color: $primary-light;
+    }
+    .list-ceo {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+
+      .list-ceo_item {
+        margin-top: 30px;
+        margin-right: 170px;
+
+        img {
+          border-radius: 50px;
+        }
+        .name-ceo {
+          margin-top: -40px;
+          position: relative;
+          top: -10px;
+          left: 15px;
+          font-size: 18px;
+          line-height: 1.78;
+          letter-spacing: 1.1px;
+          color: $primary-darker;
+        }
+        .ceo {
+          font-family: $font-ubuntu;
+          font-size: 16px;
+          line-height: 1.75;
+          letter-spacing: 1px;
+          color: #667386;
+
+          position: relative;
+          left: -70px;
+          top: 15px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
