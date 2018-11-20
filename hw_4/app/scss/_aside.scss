@@ -1,8 +1,7 @@
 .subscribe {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  text-align: center;
 
   overflow: hidden;
   padding-top: 220px;
@@ -23,13 +22,13 @@
   }
   .subscribe-form {
     display: flex;
-    justify-content: space-between;
-    width: 571px;
+    flex-direction: row;
+    align-self: center;
+    width: 500px;
     height: 50px;
     background-color: $no-primary-light;
     border-radius: 25px;
     margin-top: 70px;
-    padding-left: -51px;
 
     .input-form {
       font-size: 18px;
@@ -52,9 +51,11 @@
 
       padding: 0 51px;
       margin-top: 1px;
+      border: none;
     }
   }
 }
+
 .for-line {
   &::before {
     content: '';
@@ -63,28 +64,29 @@
     background-color: $back-color;
     margin-bottom: 15px;
   }
-  .download {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 100px;
-    padding-bottom: 200px;
+}
 
-    .dot {
-      color: $dot-color;
-    }
-    h2 {
-      font-size: 60px;
-      font-weight: 900;
-      margin-bottom: 39px;
-    }
-    p {
-      margin-bottom: 60px;
-      margin-top: -10px;
-      font-size: 18px;
-      line-height: 1.78;
-      color: $primary-gray;
-    }
+.download {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 200px;
+
+  .dot {
+    color: $dot-color;
+  }
+  h2 {
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 39px;
+  }
+  p {
+    margin-bottom: 60px;
+    margin-top: -10px;
+    font-size: 18px;
+    line-height: 1.78;
+    color: $primary-gray;
   }
 }
+

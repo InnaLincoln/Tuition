@@ -2,10 +2,9 @@ var gulp = require('gulp')
     sass = require('gulp-sass');
 
 gulp.task('sass', function () {
-  return gulp.src('scss/import.scss')
+  return gulp.src('app/scss/import.scss')
     .pipe(sass())
-    .pipe(gulp.dest('css'))
-  
+    .pipe(gulp.dest('app/css'))
 });
 
 

@@ -1,4 +1,4 @@
-.section-first{
+.messaging-section{
   display: flex;
   margin-top: 50px;
   color: $primary-darker;
@@ -13,20 +13,20 @@
     line-height: 1.78;
     color: $primary-gray;
   }
-  .first-image{
+  .messaging-image-1{
     margin-left: -115px;
   }
-  .second-image{
+  .messaging-image-2{
     margin-left: -254px;
     margin-top: 140px;
   }
-  .text-images{
+  .messaging-section_text{
      padding-left: 80px;
      margin-top: 290px;
   }
 }
 
-.section-second{
+.touch-section{
   display: flex;
   height: 800px;
 
@@ -44,16 +44,16 @@
     line-height: 1.78;
     color: $primary-gray;
   }
-  .text-images-second{
+  .touch-section_text{
      padding-right: 95px;
      margin-left: -30px;
   }
-  .fourth-image{
+  .touch-image-1{
      position: relative;
      left: 260px;
      top: -10px;
   }
-  .third-image{
+  .touch-image-2{
     position: relative;
     top: -480px;
     left: 30px;

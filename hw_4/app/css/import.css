@@ -2,105 +2,108 @@
   font-family: 'Lato', sans-serif; }
 
 .header {
-  background: url("../img/back.png") no-repeat;
+  background: url("../img/back.png") no-repeat center/cover;
   height: 950px;
   width: auto; }
-  .header .wrapper {
+  .header .wrapper .logo-nav {
     display: flex;
     justify-content: space-between; }
-    .header .wrapper .logo {
-      margin-left: -200px;
-      margin-top: 40px; }
-      .header .wrapper .logo h1 {
-        display: none; }
-    .header .wrapper .nav {
-      text-transform: uppercase;
-      line-height: 28px;
-      font-size: 18px;
-      margin-right: -200px;
-      margin-top: 40px; }
-      .header .wrapper .nav a {
+  .header .wrapper .logo {
+    margin-top: 40px; }
+    .header .wrapper .logo a {
+      display: block; }
+    .header .wrapper .logo h1 {
+      display: none; }
+  .header .wrapper .nav {
+    text-transform: uppercase;
+    line-height: 28px;
+    font-size: 18px;
+    margin-top: 40px; }
+    .header .wrapper .nav a {
+      color: #fff; }
+    .header .wrapper .nav .nav-item {
+      margin-right: 25px; }
+      .header .wrapper .nav .nav-item .nav-link:hover {
+        text-decoration: line-through;
         color: #fff; }
-      .header .wrapper .nav .nav-item {
-        margin-right: 25px; }
-        .header .wrapper .nav .nav-item .nav-link:hover {
-          text-decoration: line-through;
-          color: #fff; }
-    .header .wrapper .main-info {
-      justify-content: space-between;
-      align-items: center; }
-      .header .wrapper .main-info .simple {
-        color: #fff; }
-        .header .wrapper .main-info .simple .text-h2 {
-          font-size: 72px;
-          font-weight: 900;
-          letter-spacing: 2.9px;
-          margin-top: -100px; }
-        .header .wrapper .main-info .simple .text-p {
-          line-height: 1.17;
-          font-size: 24px;
-          padding-bottom: 20px;
-          padding-top: 25px; }
-        .header .wrapper .main-info .simple .bold-hey {
-          font-weight: 900; }
-        .header .wrapper .main-info .simple button {
-          border: 0;
-          background: #fff;
-          border-radius: 40px;
-          width: 220px;
-          height: 50px;
-          margin-top: 80px;
-          cursor: pointer;
-          font-weight: 700;
-          font-size: 18px;
-          text-shadow: 0 10px 30px rgba(223, 27, 61, 0.3);
-          color: #E42B36; }
-      .header .wrapper .main-info .phone {
-        margin-top: 130px; }
 
-.section-first {
+.safe-section {
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 80px; }
+  .safe-section .safe-section_text {
+    color: #fff; }
+    .safe-section .safe-section_text .text-h2 {
+      font-size: 72px;
+      font-weight: 900;
+      letter-spacing: 2.9px;
+      margin-top: -100px; }
+    .safe-section .safe-section_text .text-p {
+      line-height: 1.17;
+      font-size: 24px;
+      padding-bottom: 20px;
+      padding-top: 25px; }
+    .safe-section .safe-section_text .text-bold {
+      font-weight: 900; }
+    .safe-section .safe-section_text button {
+      border: 0;
+      background: #fff;
+      border-radius: 40px;
+      width: 220px;
+      height: 50px;
+      margin-top: 80px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 18px;
+      text-shadow: 0 10px 30px rgba(223, 27, 61, 0.3);
+      color: #E42B36; }
+  .safe-section .safe-section_phone {
+    margin-top: 130px; }
+
+.messaging-section {
   display: flex;
   margin-top: 50px;
   color: #363636; }
-  .section-first h2 {
+  .messaging-section h2 {
     font-size: 60px;
     font-weight: 900;
     margin-bottom: 39px; }
-  .section-first p {
+  .messaging-section p {
     font-size: 18px;
     line-height: 1.78;
     color: #808080; }
-  .section-first .first-image {
+  .messaging-section .messaging-image-1 {
     margin-left: -115px; }
-  .section-first .second-image {
+  .messaging-section .messaging-image-2 {
     margin-left: -254px;
     margin-top: 140px; }
-  .section-first .text-images {
+  .messaging-section .messaging-section_text {
     padding-left: 80px;
     margin-top: 290px; }
 
-.section-second {
+.touch-section {
   display: flex;
   height: 800px; }
-  .section-second .dot {
+  .touch-section .dot {
     color: #DF0E3D; }
-  .section-second h2 {
+  .touch-section h2 {
     padding-top: 200px;
     font-size: 60px;
     font-weight: 900;
     margin-bottom: 39px; }
-  .section-second p {
+  .touch-section p {
     font-size: 18px;
     line-height: 1.78;
     color: #808080; }
-  .section-second .text-images-second {
+  .touch-section .touch-section_text {
     padding-right: 95px;
     margin-left: -30px; }
-  .section-second .fourth-image {
+  .touch-section .touch-image-1 {
     position: relative;
     left: 260px;
     top: -10px; }
-  .section-second .third-image {
+  .touch-section .touch-image-2 {
     position: relative;
     top: -480px;
     left: 30px; }
@@ -122,51 +125,53 @@
     font-size: 60px;
     font-weight: 900;
     margin-bottom: 39px; }
-  .for-line .people-say .people-say-title {
-    padding-bottom: 45px; }
-  .for-line .people-say .card-body {
-    text-align: left;
-    font-size: 18px;
-    font-style: italic;
-    line-height: 1.78;
-    color: #808080; }
-    .for-line .people-say .card-body .card-link {
+  .for-line .people-say .card-deck {
+    margin-top: 100px; }
+    .for-line .people-say .card-deck .card-body {
+      text-align: left;
       font-size: 18px;
-      font-weight: bold;
-      line-height: 1.56;
-      letter-spacing: 1.1px;
-      color: #DF0E3D;
-      font-style: normal; }
-  .for-line .people-say .central-card {
-    box-shadow: 0 30px 60px 0 rgba(54, 54, 54, 0.15);
-    background-color: #fff; }
-  .for-line .people-say .list-ceo {
-    list-style-type: none;
-    display: flex;
-    justify-content: center; }
-    .for-line .people-say .list-ceo .list-ceo_item {
-      margin-top: 30px;
-      margin-right: 170px; }
-      .for-line .people-say .list-ceo .list-ceo_item img {
-        border-radius: 50px; }
-      .for-line .people-say .list-ceo .list-ceo_item .name-ceo {
-        margin-top: -40px;
-        position: relative;
-        top: -10px;
-        left: 15px;
+      font-style: italic;
+      line-height: 1.78;
+      color: #808080; }
+      .for-line .people-say .card-deck .card-body .card-link {
         font-size: 18px;
-        line-height: 1.78;
+        font-weight: bold;
+        line-height: 1.56;
         letter-spacing: 1.1px;
-        color: #363636; }
-      .for-line .people-say .list-ceo .list-ceo_item .ceo {
-        font-family: "Ubuntu", sans-serif;
-        font-size: 16px;
-        line-height: 1.75;
-        letter-spacing: 1px;
-        color: #667386;
-        position: relative;
-        left: -70px;
-        top: 15px; }
+        color: #DF0E3D;
+        font-style: normal; }
+
+.for-line .central-card {
+  box-shadow: 0 30px 60px 0 rgba(54, 54, 54, 0.15);
+  background-color: #fff; }
+
+.for-line .list-ceo {
+  list-style-type: none;
+  display: flex;
+  justify-content: center; }
+  .for-line .list-ceo .list-ceo_item {
+    margin-top: 30px;
+    margin-right: 170px; }
+    .for-line .list-ceo .list-ceo_item img {
+      border-radius: 50px; }
+    .for-line .list-ceo .list-ceo_item .name-ceo {
+      margin-top: -40px;
+      position: relative;
+      top: -10px;
+      left: 15px;
+      font-size: 18px;
+      line-height: 1.78;
+      letter-spacing: 1.1px;
+      color: #363636; }
+    .for-line .list-ceo .list-ceo_item .ceo {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      letter-spacing: 1px;
+      color: #667386;
+      position: relative;
+      left: -70px;
+      top: 15px; }
 
 .gradient {
   width: auto;
@@ -211,8 +216,7 @@
 .subscribe {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  text-align: center;
   overflow: hidden;
   padding-top: 220px;
   padding-bottom: 150px; }
@@ -228,13 +232,13 @@
     color: #808080; }
   .subscribe .subscribe-form {
     display: flex;
-    justify-content: space-between;
-    width: 571px;
+    flex-direction: row;
+    align-self: center;
+    width: 500px;
     height: 50px;
     background-color: #f8f8f8;
     border-radius: 25px;
-    margin-top: 70px;
-    padding-left: -51px; }
+    margin-top: 70px; }
     .subscribe .subscribe-form .input-form {
       font-size: 18px;
       color: #f8f8f8;
@@ -251,7 +255,8 @@
       background-image: linear-gradient(to top, #eb402c, #d90647);
       cursor: pointer;
       padding: 0 51px;
-      margin-top: 1px; }
+      margin-top: 1px;
+      border: none; }
 
 .for-line::before {
   content: '';
@@ -260,20 +265,19 @@
   background-color: #e0e0e0;
   margin-bottom: 15px; }
 
-.for-line .download {
+.download {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   padding-top: 100px;
   padding-bottom: 200px; }
-  .for-line .download .dot {
+  .download .dot {
     color: #DF0E3D; }
-  .for-line .download h2 {
+  .download h2 {
     font-size: 60px;
     font-weight: 900;
     margin-bottom: 39px; }
-  .for-line .download p {
+  .download p {
     margin-bottom: 60px;
     margin-top: -10px;
     font-size: 18px;
@@ -287,22 +291,21 @@
   background-color: #e0e0e0;
   margin-bottom: 15px; }
 
-.for-line .footer {
+.footer {
   text-transform: uppercase;
   margin-bottom: 20px; }
-  .for-line .footer .footer-nav {
+  .footer .footer-nav {
     list-style-type: none;
-    margin-left: -200px;
     font-size: 18px;
     line-height: 1.56;
     text-align: left;
     color: #363636; }
-    .for-line .footer .footer-nav .nav-link {
+    .footer .footer-nav .nav-link {
       color: #363636; }
-      .for-line .footer .footer-nav .nav-link:hover {
+      .footer .footer-nav .nav-link:hover {
         text-decoration: line-through;
         color: #363636; }
-  .for-line .footer .select {
+  .footer .select {
     margin-left: 100px;
     border: 0;
     width: 150px;
