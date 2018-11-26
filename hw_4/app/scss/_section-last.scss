@@ -33,13 +33,13 @@
       }
     }
     .picture-1, .picture-2, .picture-3, .picture-4 {
-      margin: 90px 50px 50px 40px;
+      margin: 90px 50px 50px 30px;
     }
     .section-1, .section-2, .section-3, .section-4 {
       width: 260px;
       height: 115px;
       overflow: hidden;
-      margin: 100px 0 0 35px;
+      margin: 100px 0 0 20px;
     }
     .section-1, .section-2 {
       text-align: right;
@@ -53,9 +53,96 @@
   }
 }
 
+@media screen and (max-width: 575.98px) {
 
+  .gradient {
+    width: 100%;
+    height: 1200px;
 
+    h3 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 12px;
+    }
+    .central-section {
+      margin-left: -50px;
+      display: flex;
+      flex-wrap: wrap;
 
+      .central-section_group {
+        order: 6;
+      }
+
+      .section-picture {
+        order: 1;
+        margin-top: -50px;
+
+        img {
+          position: relative;
+        }
+
+        .main-picture {
+          width: 60%;
+          position: absolute;
+          left: 110px;
+        }
+        .opacity-picture {
+          position: absolute;
+          top: 863px;
+          left: 89px;
+          width: 41%;
+        }
+        .play-picture {
+          position: absolute;
+          top: 1050px;
+          left: 40px;
+          width: 10%;
+        }
+      }
+      .central-section_group_first {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        position: relative;
+        top: 100px;
+        left: 25px;
+        width: auto;
+      }
+      .central-section_group_second {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        padding-left: 45px;
+        margin-top: 90px;
+      }
+
+      .section-1, .section-2, .section-3, .section-4 {
+        width: auto;
+        height: 115px;
+        overflow: hidden;
+        margin-top: 0;
+      }
+      .section-1, .section-2 {
+        text-align: left;
+        margin-left: 135px;
+        position: relative;
+        top: 450px;
+      }
+      .section-3, .section-4 {
+        text-align: left;
+        position: relative;
+        top: -305px;
+        left: 115px;
+        width: 270px;
+
+      }
+      .section-2, .section-4 {
+        margin-top: 70px;
+      }
+    }
+  }
+}
 
 
 
