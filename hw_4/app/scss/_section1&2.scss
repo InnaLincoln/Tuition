@@ -1,0 +1,61 @@
+.messaging-section{
+  display: flex;
+  margin-top: 50px;
+  color: $primary-darker;
+
+  h2{
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 39px;
+  }
+  p{
+    font-size: 18px;
+    line-height: 1.78;
+    color: $primary-gray;
+  }
+  .messaging-image-1{
+    margin-left: -115px;
+  }
+  .messaging-image-2{
+    margin-left: -254px;
+    margin-top: 140px;
+  }
+  .messaging-section_text{
+     padding-left: 80px;
+     margin-top: 290px;
+  }
+}
+
+.touch-section{
+  display: flex;
+  height: 800px;
+
+  .dot{
+    color: $dot-color;
+  }
+  h2{
+    padding-top: 200px;
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 39px;
+  }
+  p{
+    font-size: 18px;
+    line-height: 1.78;
+    color: $primary-gray;
+  }
+  .touch-section_text{
+     padding-right: 95px;
+     margin-left: -30px;
+  }
+  .touch-image-1{
+     position: relative;
+     left: 260px;
+     top: -10px;
+  }
+  .touch-image-2{
+    position: relative;
+    top: -480px;
+    left: 30px;
+  }
+}

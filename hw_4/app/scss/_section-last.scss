@@ -1,0 +1,64 @@
+.gradient {
+  width: auto;
+  height: 517px;
+  background-image: linear-gradient(to top, #eb402c, #d90647);
+
+  h3 {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.4;
+    letter-spacing: 1.4px;
+    color: $primary-light;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.6);
+    opacity: 0.6;
+  }
+  .central-section {
+    margin-left: -50px;
+
+    .section-picture {
+      margin-top: -85px;
+
+      .opacity-picture {
+        margin-top: -811px;
+        margin-left: 60px;
+      }
+      .play-picture {
+        margin-top: -860px;
+        margin-left: 180px;
+      }
+    }
+    .picture-1, .picture-2, .picture-3, .picture-4 {
+      margin: 90px 50px 50px 40px;
+    }
+    .section-1, .section-2, .section-3, .section-4 {
+      width: 260px;
+      height: 115px;
+      overflow: hidden;
+      margin: 100px 0 0 35px;
+    }
+    .section-1, .section-2 {
+      text-align: right;
+    }
+    .section-3, .section-4 {
+      text-align: left;
+    }
+    .section-2, .section-4 {
+      margin-top: 70px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
