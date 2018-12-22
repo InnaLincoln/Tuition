@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Театр ім. Т.Г.Шевченка</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+      $(function() {
+        console.log( "ready!" );
+      });
+    </script>
     <link rel="stylesheet" href="theatre.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
@@ -76,42 +82,54 @@
             </div>
         </div>
     </header>
-    <div class="background_image d-flex justify-content-center align-items-center">
-        <img src="img/back.png">
+    <div class="background_image d-flex justify-content-center align-items-center" >
+        <img src="img/back.png" id="back">
     </div>
     <div class="slider">
-        <ul class="slider-row d-flex">
-            <li class="left-arrow">
-                <a href="">
-                    <img src="img/left.png">
-                </a>
-            </li>
-            <li class="gray-block">
-                <img src="img/icon.png">
-                <div class="inside-block d-flex">
-                    <span class="day">Нд</span>
-                    <span class="number-of-day">21</span>
-                    <span class="month">лютого</span>
+        <div class="left-arrow" id="left-arrow">
+            <a href="#">
+                <img src="img/left.png">
+            </a>
+        </div>
+        <ul class="slider-row d-flex" id="slider-row">
+            <li class="gray-block slider-item" ><a href="#" id="first-item">
+                <img src="img/icon.png" id="first-img">
+                <div class="inside-block d-flex" id="first-block">
+                    <span class="day" id="day">Нд</span>
+                    <span class="number-of-day" id="number-of-day">21</span>
+                    <span class="month" id="month">лютого</span>
+                </div></a>
+            <li class="red-block-long-1" id="red-long-1">
+                <img src="img/icon-red-long.png" >
+                <div class="inside-block-long d-flex">
+                    <span class="title">Дядя Ваня</span>
+                    <span class="text">Вистава на дві дії <br>
+                    Тривалість вистави 2 год.</span>
+                    <button class="button">Купити квиток</button>
+                    <div class="button-img">
+                        <img src="img/barcode.png">
+                    </div>
                 </div>
             </li>
-            <li class="gray-block">
-                <img src="img/icon.png">
-                <div class="inside-block d-flex">
+            </li>
+            <li class="gray-block slider-item"><a href="theatre.html">
+                <img src="img/icon.png" id="second-img">
+                <div class="inside-block d-flex" id="second-block">
                     <span class="day">Пн</span>
                     <span class="number-of-day">22</span>
                     <span class="month">лютого</span>
+                </div></a>
+            </li>
+            <li class="red-block slider-item" id="red-block-3">
+                <img src="img/icon-red.png" id="third-img">
+                <div class="inside-block d-flex" id="third-block">
+                    <span class="day-white" id="day-3">Пн</span>
+                    <span class="number-of-day" id="number-3">22</span>
+                    <span class="month-white" id="month-3">лютого</span>
                 </div>
             </li>
-            <li class="red-block">
-                <img src="img/icon-red.png">
-                <div class="inside-block d-flex">
-                    <span class="day-white">Пн</span>
-                    <span class="number-of-day white">22</span>
-                    <span class="month-white">лютого</span>
-                </div>
-            </li>
-            <li class="red-block-long">
-                <img src="img/icon-red-long.png">
+            <li class="red-block-long" id="red-long">
+                <img src="img/icon-red-long.png" >
                 <div class="inside-block-long d-flex">
                     <span class="title">Сад гетсиманський</span>
                     <span class="text">Народна трагедія на три дії <br>
@@ -122,28 +140,52 @@
                     </div>
                 </div>
             </li>
-            <li class="gray-block">
-                <img src="img/icon.png">
-                <div class="inside-block d-flex">
-                    <span class="day">Вт</span>
-                    <span class="number-of-day">23</span>
-                    <span class="month">лютого</span>
+            <li class="gray-block slider-item"><a href="#" id="fourth-item">
+                <img src="img/icon.png" id="fourth-img">
+                <div class="inside-block d-flex" id="fourth-block">
+                    <span class="day" id="day-4">Вт</span>
+                    <span class="number-of-day" id="number-4">23</span>
+                    <span class="month" id="month-4">лютого</span>
+                </div></a>
+            </li>
+            <li class="red-block-long-4" id="red-long-4">
+                <img src="img/icon-red-long.png" >
+                <div class="inside-block-long d-flex">
+                    <span class="title">Майстер і Маргарита</span>
+                    <span class="text">Вистава на чотири дії <br>
+                    Тривалість вистави 3 год 10 хв.</span>
+                    <button class="button">Купити квиток</button>
+                    <div class="button-img">
+                        <img src="img/barcode.png">
+                    </div>
                 </div>
             </li>
-            <li class="gray-block">
-                <img src="img/icon.png">
-                <div class="inside-block d-flex">
-                    <span class="day">Ср</span>
-                    <span class="number-of-day">24</span>
-                    <span class="month">лютого</span>
-                </div>
+            <li class="gray-block slider-item"><a href="#" id="fifth-item">
+                <img src="img/icon.png" id="fifth-img">
+                <div class="inside-block d-flex" id="fifth-block">
+                    <span class="day" id="day-5">Ср</span>
+                    <span class="number-of-day" id="number-5">24</span>
+                    <span class="month" id="month-5">лютого</span>
+                </div></a>
             </li>
-            <li class="right-arrow">
-                <a href="">
-                    <img src="img/right.png">
-                </a>
+            <li class="red-block-long-5" id="red-long-5">
+                <img src="img/icon-red-long.png" >
+                <div class="inside-block-long d-flex">
+                    <span class="title">Дон Жуан</span>
+                    <span class="text">Вистава на три дії <br>
+                    Тривалість вистави 3 год.</span>
+                    <button class="button">Купити квиток</button>
+                    <div class="button-img">
+                        <img src="img/barcode.png">
+                    </div>
+                </div>
             </li>
         </ul>
+        <div class="right-arrow" id="right-arrow">
+            <a href="#">
+                <img src="img/right.png">
+            </a>
+        </div>
     </div>
     <div class="container d-flex main">
         <nav>
@@ -348,6 +390,7 @@
             </div>
         </div>
     </footer>
+    <script src="theatre_slider.js"></script>
 </body>
 </html>
 

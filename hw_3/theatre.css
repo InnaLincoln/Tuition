@@ -15,6 +15,22 @@
   text-transform: uppercase;
 }
 
+.gray-block a{
+  display: block;
+  cursor: pointer;
+  color: #fff;
+}
+
+.gray-block a:hover{
+  text-decoration: none;
+  color: #fff;
+}
+
+.white-text{
+  color: #fff;
+}
+
+
 .nav__item a{
   color: #fff;
 }
@@ -63,6 +79,9 @@ select{
 
 .slider{
   position: relative;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
   top: -120px;
   width: 100%;
   color: #fff;
@@ -71,8 +90,9 @@ select{
 .slider-row{
   justify-content: center;
   align-items: baseline;
-  margin-left: -50px;
+  overflow: hidden;
 }
+
 
 .inside-block{
   flex-direction: column;
@@ -93,6 +113,10 @@ select{
   border-bottom: 1px solid #7d7c7c;
   margin-top: -15px;
   margin-bottom: -5px;
+}
+
+.red-block-long-1, .red-block-long-4, .red-block-long-5{
+  display: none;
 }
 
 .white{
@@ -127,6 +151,7 @@ select{
   top: -20px;
   left: 270px;
   border: 0;
+  cursor: pointer;
 }
 
 .title{
@@ -144,11 +169,12 @@ select{
   background-image: linear-gradient(to top, #4c4c4c, #505050);
   padding-top: 4px;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .left-arrow{
   padding-left: 11px;
-  margin-right: 4px;
+  margin-right: -35px;
 }
 
 .right-arrow{
