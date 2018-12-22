@@ -10,41 +10,89 @@
 
 .footer {
   text-transform: uppercase;
-  margin-bottom: 20px;
 
-  .footer-nav {
-    list-style-type: none;
-    font-size: 18px;
-    line-height: 1.56;
-    text-align: left;
-    color: $primary-darker;
+  .footer-wrapper {
+    width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
 
-    .nav-link {
+    .footer-nav {
+      list-style-type: none;
+      font-size: 18px;
+      line-height: 1.56;
+      text-align: left;
       color: $primary-darker;
+      display: flex;
 
-      &:hover {
-        text-decoration: line-through;
+      .nav-link {
         color: $primary-darker;
+
+        &:hover {
+          text-decoration: line-through;
+          color: $primary-darker;
+        }
       }
     }
-  }
-  .select {
-    margin-left: 100px;
-    border: 0;
-    width: 150px;
-    height: 50px;
-    border-radius: 25px;
-    background-color: $no-primary-light;
-    text-transform: uppercase;
-    padding-left: 10px;
-    text-align: center;
-    color: $primary-darker;
-    font-size: 18px;
+    .select {
+      border: 0;
+      width: 150px;
+      height: 50px;
+      border-radius: 25px;
+      background-color: $no-primary-light;
+      text-transform: uppercase;
+      text-align: center;
+      color: $primary-darker;
+      font-size: 18px;
+    }
   }
 }
 
+@media screen and (max-width: 575.98px) {
+  .footer {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 
+    .footer-wrapper {
+      margin-right: auto;
+      margin-left: auto;
+      display: flex;
+      justify-content: space-between;
 
+      .footer-nav {
+        list-style-type: none;
+        font-size: 7px;
+        line-height: 1.56;
+        text-align: left;
+        color: $primary-darker;
+        margin-left: -40px;
 
+        .nav-link {
+          color: $primary-darker;
+          margin-right: -15px;
+
+          &:hover {
+            text-decoration: line-through;
+            color: $primary-darker;
+          }
+        }
+      }
+      .select {
+        border: 0;
+        width: 50px;
+        height: 25px;
+        border-radius: 25px;
+        background-color: $no-primary-light;
+        text-transform: uppercase;
+        text-align: center;
+        color: $primary-darker;
+        font-size: 7px;
+      }
+    }
+  }
+}
 
 

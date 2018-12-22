@@ -90,3 +90,55 @@
   }
 }
 
+@media screen and (max-width: 575.98px) {
+  .subscribe {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 60px;
+
+    h2 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 14px;
+    }
+    .subscribe-form {
+      width: 300px;
+      height: 25px;
+      margin-top: 70px;
+
+      .input-form {
+        font-size: 14px;
+        padding-left: 30px;
+      }
+      .button-form {
+        font-size: 14px;
+        height: 25px;
+        margin-left: -80px;
+        padding-left: 35px;
+        padding-right: 35px;
+        margin-top: 0;
+      }
+    }
+  }
+
+  .download {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 32px;
+    }
+    p {
+      margin-bottom: 60px;
+      margin-top: -10px;
+      font-size: 14px;
+    }
+    img {
+      width: 30%;
+      height: 30%;
+    }
+  }
+}
