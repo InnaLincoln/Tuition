@@ -77,6 +77,22 @@ select{
   display: none;
 }
 
+.not-active{
+  color: #7d7c7c; !important;
+}
+
+.active{
+  color: white; !important;
+}
+
+.not-display{
+  display: none;
+}
+
+.display{
+  display: block;
+}
+
 .slider{
   position: relative;
   display: flex;
@@ -104,7 +120,6 @@ select{
 .day, .month{
   font-weight: 100;
   font-size: 16px;
-  color: #7d7c7c;
   line-height: 25px;
 }
 
@@ -113,10 +128,6 @@ select{
   border-bottom: 1px solid #7d7c7c;
   margin-top: -15px;
   margin-bottom: -5px;
-}
-
-.red-block-long-1, .red-block-long-4, .red-block-long-5{
-  display: none;
 }
 
 .white{

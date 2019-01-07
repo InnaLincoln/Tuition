@@ -1,105 +1,69 @@
-function makeGrayFirst(){
-  document.getElementById("day").style.color="#7d7c7c";
-  document.getElementById("month").style.color="#7d7c7c";
-  document.getElementById("number-of-day").style.borderColor="#7d7c7c";
-  document.getElementById('red-block-3').style.display="none";
-  document.getElementById('red-long-1').style.display="none";
-  document.getElementById('first-img').setAttribute('src', 'img/icon.png');
-}
+let prev = document.querySelector('.slider .left-arrow');
+let next = document.querySelector('.slider .right-arrow');
 
-function makeGrayThird(){
-  document.getElementById("day-3").style.color="#7d7c7c";
-  document.getElementById("month-3").style.color="#7d7c7c";
-  document.getElementById("number-3").style.borderColor="#7d7c7c";
-}
+document.getElementById('first').addEventListener('click', firstItemActive);
+document.getElementById('fourth').addEventListener('click', fourthItemActive);
+document.getElementById('fifth').addEventListener('click', fifthItemActive);
 
-function makeGrayFourth(){
-  document.getElementById("day-4").style.color="#7d7c7c";
-  document.getElementById("month-4").style.color="#7d7c7c";
-  document.getElementById("number-4").style.borderColor="#7d7c7c";
-  document.getElementById('red-long-4').style.display="none";
-  document.getElementById('fourth-img').setAttribute('src', 'img/icon.png');
-}
-
-function makeGrayFifth(){
-  document.getElementById("day-5").style.color="#7d7c7c";
-  document.getElementById("month-5").style.color="#7d7c7c";
-  document.getElementById("number-5").style.borderColor="#7d7c7c";
-  document.getElementById('red-long').style.display="none";
-  document.getElementById('red-long-5').style.display="none";
-  document.getElementById('red-block-3').style.display="none";
-  document.getElementById('fifth-img').setAttribute('src', 'img/icon.png');
-}
-
-document.getElementById('first-item').onclick = function(){
+function firstItemActive() {
   document.getElementById('first-img').setAttribute('src', 'img/icon-red.png');
+  document.getElementById("first-block").classList.remove('not-active');
+  document.getElementById("first-block").classList.add('active');
+  document.getElementById("red-long-1").classList.add('display');
   document.getElementById('back').setAttribute('src', 'img/back1.jpg');
-  document.getElementById("day").style.color="white";
-  document.getElementById("month").style.color="white";
-  document.getElementById("number-of-day").style.borderColor="white";
-  document.getElementById('red-long-1').style.display="block";
+  fourthItemNotActive();
+  fifthItemNotActive();
+  secondItemNotActive();
+}
 
-  makeGrayThird();
-  makeGrayFourth();
-  makeGrayFifth();
-};
-
-document.getElementById('fourth-item').onclick = function(){
+function fourthItemActive() {
   document.getElementById('fourth-img').setAttribute('src', 'img/icon-red.png');
+  document.getElementById("fourth-block").classList.remove('not-active');
+  document.getElementById("fourth-block").classList.add('active');
+  document.getElementById("red-long-4").classList.add('display');
   document.getElementById('back').setAttribute('src', 'img/back2.jpg');
-  document.getElementById("day-4").style.color="white";
-  document.getElementById("month-4").style.color="white";
-  document.getElementById("number-4").style.borderColor="white";
-  document.getElementById('red-long-4').style.display="block";
+  firstItemNotActive();
+  fifthItemNotActive();
+  secondItemNotActive();
+}
 
-  makeGrayFirst();
-  makeGrayThird();
-  makeGrayFifth();
-};
-
-document.getElementById('fifth-item').onclick = function(){
+function fifthItemActive() {
   document.getElementById('fifth-img').setAttribute('src', 'img/icon-red.png');
-  document.getElementById('red-long-5').style.display="block";
+  document.getElementById("fifth-block").classList.remove('not-active');
+  document.getElementById("fifth-block").classList.add('active');
+  document.getElementById("red-long-5").classList.add('display');
   document.getElementById('back').setAttribute('src', 'img/back3.jpg');
-  document.getElementById("day-5").style.color="white";
-  document.getElementById("month-5").style.color="white";
-  document.getElementById("number-5").style.borderColor="white";
-  document.getElementById('red-long').style.display="none";
+  firstItemNotActive();
+  fourthItemNotActive();
+  secondItemNotActive();
+}
 
-  makeGrayFirst();
-  makeGrayThird();
-  makeGrayFourth();
-};
+function firstItemNotActive() {
+  document.getElementById('first-img').setAttribute('src', 'img/icon.png');
+  document.getElementById("first-block").classList.remove('active');
+  document.getElementById("first-block").classList.add('not-active');
+  document.getElementById("red-long-1").classList.remove('display');
+  document.getElementById("red-long-1").classList.add('not-display');
+}
 
-/*'use strict';
+function fourthItemNotActive() {
+  document.getElementById('fourth-img').setAttribute('src', 'img/icon.png');
+  document.getElementById("fourth-block").classList.remove('active');
+  document.getElementById("fourth-block").classList.add('not-active');
+  document.getElementById("red-long-4").classList.remove('display');
+  document.getElementById("red-long-4").classList.add('not-display');
+}
 
-let slider = multiItemSlider('.slider')
+function fifthItemNotActive(){
+  document.getElementById('fifth-img').setAttribute('src', 'img/icon.png');
+  document.getElementById("fifth-block").classList.remove('active');
+  document.getElementById("fifth-block").classList.add('not-active');
+  document.getElementById("red-long-5").classList.remove('display');
+  document.getElementById("red-long-5").classList.add('not-display');
+}
 
-//let left = document.getElementById("left-arrow");
+function secondItemNotActive() {
+  document.getElementById("red-block-3").classList.add('not-display');
+  document.getElementById("red-long").classList.add('not-display');
+}
 
-//document.getElementById("left-arrow").onclick = function () {
-//
-//  document.getElementById("first-block").replaceWith(document.getElementById("second-block"));
-  //first.parentNode.removeChild(first);
-  //document.getElementById('first-img').setAttribute('src', 'img/icon.png');
-
-
-
-  //first.replaceChild(second,first.firstChild);
-  //(second).replaceWith(third);
-  //(third).replaceWith(fourth);
-  //(fourth).replaceWith(fifth);
-//};
-
-//function callback() {
-//  (first).replaceWith(second);
-//  (second).replaceWith(third);
-//  (third).replaceWith(fourth);
-//  (fourth).replaceWith(fifth);
-//
-//
-//
-//}
-//
-//left.addEventListener('click', callback);
-*/
