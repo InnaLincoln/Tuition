@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HeyU</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -20,35 +21,38 @@
                     </a>
                 </div>
                 <div class="col-lg-8">
-                    <nav>
-                        <ul class="nav justify-content-end">
-                            <li class="nav-item">
-                                <a class="nav-link" href="heyu.html">About</a>
+                    <nav class="nav justify-content-end">
+                        <input type="checkbox" class="nav__cb" id="menu-cb">
+                        <div class="nav__content">
+                        <ul class="nav__items ">
+                            <li class="nav__item">
+                                <a class="nav__item-text" href="heyu.html">About</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Faq</a>
+                            <li class="nav__item">
+                                <a class="nav__item-text" href="#">Faq</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Support</a>
+                            <li class="nav__item">
+                                <a class="nav__item-text" href="#">Support</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
+                            <li class="nav__item">
+                                <a class="nav__item-text" href="#">Blog</a>
                             </li>
                         </ul>
+                        </div>
+                        <label class="nav__btn" for="menu-cb"></label>
                     </nav>
-                </div>
+                </div></div>
             </div>
-        </div>
     </header>
     <div class="container">
         <div class="row safe-section">
-        <div class="col-lg-8 safe-section_text">
+        <div class="col-sm-8 safe-section_text">
             <h2 class="text-h2">Simple, safe <br> & beautiful.</h2>
             <p class="text-p">With
                 <span class="text-bold">HeyU</span>, you'll get fast, simple, secure messaging!</p>
             <button class="text-button">Download now</button>
         </div>
-        <div class="col-lg-4 safe-section_phone">
+        <div class="col-sm-4 safe-section_phone">
             <img src="img/phone1.png" alt="phone">
         </div>
     </div>
@@ -56,29 +60,33 @@
     <main>
         <section>
             <div class="container messaging-section">
-                <div class="col-lg-5">
-                    <img src="img/screen1.png" class="messaging-image-1" alt="picture">
-                    <img src="img/screen.png" class="messaging-image-2" alt="picture">
-                </div>
-                <div class="col-lg-7 messaging-section_text">
-                    <h2>Easy Messaging</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <div class="row">
+                    <div class="col-5">
+                        <img src="img/screen1.png" class="messaging-image-1" alt="picture">
+                        <img src="img/screen.png" class="messaging-image-2" alt="picture">
+                    </div>
+                    <div class="col-7 messaging-section_text">
+                        <h2>Easy Messaging</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
                 </div>
             </div>
         </section>
         <section>
             <div class="container touch-section">
-                <div class="col-lg-7 touch-section_text">
-                    <h2>Keep in touch<span class="dot">.</span></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-                <div class="col-lg-5">
-                    <img src="img/screen3.png" class="touch-image-1" alt="picture">
-                    <img src="img/screen2.png" class="touch-image-2" alt="picture">
+                <div class="row">
+                    <div class="col-7 touch-section_text">
+                        <h2>Keep in touch<span class="dot">.</span></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                    <div class="col-5">
+                        <img src="img/screen3.png" class="touch-image-1" alt="picture">
+                        <img src="img/screen2.png" class="touch-image-2" alt="picture">
+                    </div>
                 </div>
             </div>
         </section>
@@ -132,45 +140,45 @@
         <section class="gradient">
             <div class="container">
                 <div class="row central-section">
-                    <div class="col-lg-3">
+                    <div class="col-sm-3 central-section_group">
                         <div class="section-1">
                             <h3>Start conversation</h3>
-                            <p>Lorem ipsum dolor sit amet, con&shysectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            <p>Lorem ipsum dolor sit amet, con&shysectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                         </div>
                         <div class="section-2">
                             <h3>Make a free call</h3>
-                            <p>Lorem ipsum dolor sit amet, con&shysectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            <p>Lorem ipsum dolor sit amet, con&shysectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                         </div>
                     </div>
-                    <div class="col-lg-1">
+                    <div class="col-sm-1 central-section_group central-section_group_first">
                         <img src="img/conver.png" class="picture-1">
                         <img src="img/call.png" class="picture-2">
                     </div>
-                    <div class="col-lg-4 section-picture">
-                        <img src="img/phone2.png">
+                    <div class="col-sm-4 section-picture">
+                        <img src="img/phone2.png" class="main-picture">
                         <img src="img/screen5.png" class="opacity-picture">
                         <a href="#"><img src="img/play.png" class="play-picture"></a>
                     </div>
-                    <div class="col-lg-1">
+                    <div class="col-sm-1 central-section_group central-section_group_second">
                         <img src="img/pic.png" class="picture-3">
                         <img src="img/video.png" class="picture-4">
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-sm-3 central-section_group">
                         <div class="section-3">
                             <h3>Take a picture</h3>
-                            <p>Lorem ipsum dolor sit amet, con&shysectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            <p>Lorem ipsum dolor sit amet, con&shysectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                         </div>
                         <div class="section-4">
                             <h3>Send your video</h3>
-                            <p>Lorem ipsum dolor sit amet, con&shysectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            <p>Lorem ipsum dolor sit amet, con&shysectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                         </div>
                     </div>
                 </div>
@@ -210,11 +218,9 @@
         </div>
     </aside>
     <footer class="for-line footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-9">
+        <div class="footer-wrapper">
                     <nav>
-                        <ul class="footer-nav d-flex justify-content-start">
+                        <ul class="footer-nav">
                             <li class="nav-i">
                                 <a class="nav-link" href="#">About</a>
                             </li>
@@ -232,15 +238,12 @@
                             </li>
                         </ul>
                     </nav>
-                </div>
-                <div class="col-lg-3">
+
                     <select name="language" class="select">
                         <option value="EN">English</option>
                         <option value="NL">Netherlands</option>
                         <option value="UA">Ukraine</option>
                     </select>
-                </div>
-            </div>
         </div>
     </footer>
 </body>

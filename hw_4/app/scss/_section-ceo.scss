@@ -83,6 +83,36 @@
   }
 }
 
+@media screen and (max-width: 575.98px) {
+  .for-line {
+    width: 100%;
+
+    .people-say {
+      width: 100%;
+      margin-top: 55px;
+      margin-bottom: 80px;
+
+      h2 {
+        font-size: 32px;
+      }
+
+      .card-deck {
+        margin-top: 60px;
+
+        .card-body {
+          font-size: 14px;
+
+          .card-link {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .list-ceo_item {
+      display: none;
+    }
+  }
+}
 
 
 
